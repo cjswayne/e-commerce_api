@@ -13,7 +13,11 @@ Tag.init(
       autoIncrement:true
     },
     tag_name:{
-      type:DataTypes.STRING
+      type:DataTypes.STRING,
+      unique:{
+        args:true,
+        message:'Tag name must be unique.'
+      }
     }
   },
   {

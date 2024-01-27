@@ -20,7 +20,11 @@ Product.init(
     },
     product_name:{
       type:DataTypes.STRING,
-      allowNull:false
+      allowNull:false,
+      unique:{
+        args:true,
+        message:'Product name must be unique.'
+      }
     },
     price:{
       type: DataTypes.DECIMAL,

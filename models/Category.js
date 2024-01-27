@@ -15,7 +15,11 @@ Category.init(
     },
     category_name:{
       type:DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      unique:{
+        args:true,
+        message:'Category name must be unique.'
+      }
     }
   },
   {
