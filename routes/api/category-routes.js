@@ -13,8 +13,8 @@ router.get('/', async (req, res) => {
   
     res.send(categories);
   } catch(err){
-console.log(err);
-  }
+    res.status(400).json(err);
+    }
 
   
 });
@@ -37,8 +37,7 @@ router.get('/:id', async (req, res) => {
       message: 'Could not find Category'
     })
   } catch(err){
-    console.log(err)
-  }
+    res.status(400).json(err);  }
 
 });
 
@@ -54,14 +53,7 @@ router.post('/', async (req, res) => {
       category:category
     })
   } catch(err){
-    // console.log(err)
-    const messages = err.errors.map(eObj => eObj.message);
-
-    return res.json({
-      error: 401,
-      message: messages
-    })
-
+    res.status(400).json(err);
   }
 });
 
@@ -86,14 +78,7 @@ router.put('/:id', async (req, res) => {
     }
 
   } catch(err){
-    console.log(err)
-
-    const messages = err.errors.map(eObj => eObj.message);
-
-    return res.json({
-      error: 401,
-      message: messages
-    })
+    res.status(400).json(err);
   }
 });
 
@@ -119,13 +104,7 @@ router.delete('/:id', async (req, res) => {
     }
 
   } catch(err){
-    console.log(err)
-    const message = err.errors;
-
-    return res.json({
-      error: 401,
-      message: message
-    })
+    res.status(400).json(err);
   }
 });
 
