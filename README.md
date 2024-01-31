@@ -1,4 +1,3 @@
-
   # E-Commerce API
 
   ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -10,7 +9,7 @@
   ## Table of Contents 
     
   - [Technologies](#Technologies)
-  - [Usage](#usage)
+  - [Usage](#Usage)
   - [Installation](#Installation)
   - [Credits](#credits)
   - [License](#license)
@@ -19,12 +18,12 @@
 
   ## Technologies
   
-  - mysql, express.js
+  - mysql, express.js, sequelize
   
 
   ## Usage
   
-  ![]()
+  ![https://www.loom.com/share/06f23b5764dc4d5e9450959a00abf899?sid=4dc0cc67-da3a-4d7b-80c7-da435472b22d](https://www.loom.com/share/06f23b5764dc4d5e9450959a00abf899?sid=4dc0cc67-da3a-4d7b-80c7-da435472b22d)
 
 ## Installation
 
