@@ -28,7 +28,8 @@ router.get('/:id', async (req, res) => {
     const product = await Product.findOne({
       where:{
         id:pId
-      }
+      },
+      include: Tag
     })
 
     if(product){

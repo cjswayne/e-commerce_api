@@ -26,7 +26,8 @@ router.get('/:id', async (req, res) => {
     const tag = await Tag.findOne({
       where: {
         id: tId
-      }
+      },
+      include: Product
     })
 
     if (tag) return res.send(tag);
